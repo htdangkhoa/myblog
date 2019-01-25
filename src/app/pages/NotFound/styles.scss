@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.text-wrapper {
+  display: table;
+  width: 100%;
+  // height: calc(100vh - #{$navHeight});
+
+  vertical-align: middle;
+
+  text-align: center;
+
+  .title {
+    display: table-cell;
+    vertical-align: middle;
+
+    h1 {
+      color: $blue;
+    }
+  }
+}

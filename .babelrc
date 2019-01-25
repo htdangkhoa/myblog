@@ -1,0 +1,49 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "current"
+      }
+    }],
+    "@babel/preset-react"
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        "minify"
+      ],
+      "plugins": [
+        [
+          "transform-remove-console",
+          {
+            "exclude": [
+              "error",
+              "warn"
+            ]
+          }
+        ]
+      ]
+    }
+  },
+  "plugins": [
+    [
+      "css-modules-transform",
+      {
+        "generateScopedName": "[hash:8]",
+        "extensions": [
+          ".scss",
+          ".css"
+        ]
+      }
+    ],
+    [
+      "transform-assets",
+      {
+        "extensions": [
+          "svg", "png", "jpg"
+        ],
+        "name": "[name].[ext]?[sha512:hash:base64:7]",
+      }
+    ]
+  ]
+}
