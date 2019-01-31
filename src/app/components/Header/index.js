@@ -28,7 +28,7 @@ export default class Header extends Component {
                   Projects
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/sign-up">
                   Sign up
                 </Link>
@@ -37,7 +37,7 @@ export default class Header extends Component {
                 <Link className="nav-link" to="/sign-in">
                   Sign in
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
