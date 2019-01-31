@@ -1,5 +1,6 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -37,6 +38,12 @@ module.exports = {
       },
     ],
   },
-  plugins: [new CleanWebpackPlugin('dist')],
+  plugins: [
+    new CleanWebpackPlugin('dist'),
+    new BrowserSyncPlugin({
+      proxy: 'http://localhost:8888',
+      browser: 'Google Chrome',
+    }),
+  ],
   performance: { hints: false },
 };

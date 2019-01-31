@@ -9,8 +9,15 @@
     "build:server": "BABEL_ENV=production babel src -s -D -d dist",
     "build": "npm run build:client && npm run build:server",
     "dev:client": "webpack --config webpack/webpack.config.dev.js -w",
-    "dev:server": "NODE_ENV=development nodemon src/index.js --ignore ./webpack --exec babel-node",
-    "dev": "npm run dev:client & npm run dev:server"
+    "dev:server": "NODE_ENV=development nodemon src/index.js  --exec babel-node",
+    "wait": "wait-on http://localhost:8888",
+    "dev": "concurrently \"npm run dev:server\" \"npm run wait && npm run dev:client\""
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "./webpack",
+      "./dist"
+    ]
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -47,7 +54,10 @@
     "babel-plugin-transform-assets": "^1.0.2",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "babel-preset-minify": "^0.5.0",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
     "clean-webpack-plugin": "^1.0.0",
+    "concurrently": "^4.1.0",
     "css-loader": "^2.1.0",
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -62,6 +72,7 @@
     "style-loader": "^0.23.1",
     "terser-webpack-plugin": "^1.2.1",
     "url-loader": "^1.1.2",
+    "wait-on": "^3.2.0",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
   }
