@@ -14,7 +14,7 @@ jobs:
           command: export NOW_TOKEN=jCz2V3dlQjLuCEdM2HvlZoEk
       - run:
           name: "Deploy to Now"
-          command: now -t NOW_TOKEN
+          command: now -t $NOW_TOKEN
       - run:
           name: "Now alias"
-          command: now -t NOW_TOKEN ln
+          command: now -t $NOW_TOKEN ln
