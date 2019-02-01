@@ -18,4 +18,6 @@ jobs:
     steps:
       - deploy:
         name: Deploy to Now
-        command: now -t qlCKyiruBgEDfJ2Ir2zCvpjV
+        command: |
+        yarn
+        # now -t qlCKyiruBgEDfJ2Ir2zCvpjV
