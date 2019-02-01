@@ -18,4 +18,4 @@ jobs:
       - deploy:
         name: Deploy to Now
         command: |
-        now --public && now ln myblog.now.sh
+        now -t qlCKyiruBgEDfJ2Ir2zCvpjV
