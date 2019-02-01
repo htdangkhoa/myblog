@@ -14,9 +14,7 @@ dependencies:
 
 jobs:
   build:
-    machine: 
-      node:
-        version: 10.13.0
+    machine: true
     steps:
       - deploy:
         name: Deploy to Now
