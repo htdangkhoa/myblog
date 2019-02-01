@@ -14,5 +14,5 @@ jobs:
       - checkout
       - run:
           name: "Deploy to Now"
-          command: yarn
-        # now -t qlCKyiruBgEDfJ2Ir2zCvpjV
+          command: |
+          now -t qlCKyiruBgEDfJ2Ir2zCvpjV
