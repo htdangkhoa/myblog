@@ -1,9 +1,5 @@
 version: 2
 
-dependencies:
-  override:
-    - yarn
-
 jobs:
   build:
     docker:
@@ -11,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Install `Now`"
-          command: yarn global add now 
+          name: "Install Now CLI"
+          command: sudo npm install -g now
       - run:
           name: "Deploy to Now"
           command: now -t qlCKyiruBgEDfJ2Ir2zCvpjV
