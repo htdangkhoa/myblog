@@ -4,11 +4,11 @@
   "alias": "myblog.now.sh",
   "builds": [
     {
-      "src": "./dist/**/*.js",
+      "src": "dist/**/*.js",
       "use": "@now/node"
     },
     {
-      "src": "*/index.js",
+      "src": "dist/index.js",
       "use": "@now/node-server"
     }
   ],
