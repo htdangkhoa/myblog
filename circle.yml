@@ -10,11 +10,11 @@ jobs:
           name: "Install Now CLI"
           command: sudo npm i -g --unsafe-perm now
       - run:
-          name: "Install dependencies"
-          command: npm i
+          name: "Define Now's token"
+          command: export NOW_TOKEN=jCz2V3dlQjLuCEdM2HvlZoEk
       - run:
-          name: "Build"
-          command: npm run build
+          name: "Deploy to Now"
+          command: now -t ${NOW_TOKEN}
       - run:
-          name: "Login to Now"
-          command: now -t jCz2V3dlQjLuCEdM2HvlZoEk
+          name: "Now alias"
+          command: now -t ${NOW_TOKEN} ln
