@@ -17,5 +17,4 @@ jobs:
     steps:
       - deploy:
         name: Deploy to Now
-        command: |
-        now -t qlCKyiruBgEDfJ2Ir2zCvpjV
+        command: now -t qlCKyiruBgEDfJ2Ir2zCvpjV
