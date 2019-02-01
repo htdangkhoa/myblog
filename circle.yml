@@ -8,7 +8,13 @@ jobs:
       - checkout
       - run:
           name: "Install Now CLI"
-          command: sudo npm install -g now
+          command: sudo npm i -g --unsafe-perm now
       - run:
-          name: "Deploy to Now"
+          name: "Login to Now"
           command: now -t qlCKyiruBgEDfJ2Ir2zCvpjV
+      - run: 
+          name: "Deploy to Now"
+          command: now --public
+      - run:
+          name: "Now alias"
+          command: now ln myblog.now.sh
