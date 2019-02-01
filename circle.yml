@@ -12,6 +12,6 @@ jobs:
       - image: circleci/node:10.0-browsers
     steps:
       - run:
-        name: Deploy to Now
+        name: "Deploy to Now"
         command: npm install
         # now -t qlCKyiruBgEDfJ2Ir2zCvpjV
