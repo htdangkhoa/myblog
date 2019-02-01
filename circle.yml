@@ -14,12 +14,10 @@ jobs:
             - run:
                 name: "Install Now CLI"
                 command: sudo npm i -g --unsafe-perm now
-            # - run:
-            #     name: "Token"
-            #     command: NOW_TOKEN=jCz2V3dlQjLuCEdM2HvlZoEk
             - run:
                 name: "Deploy to Now"
                 command: now -t NOW_TOKEN
             - run:
                 name: "Now alias"
                 command: now -t $NOW_TOKEN ln
+      # end
