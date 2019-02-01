@@ -1,5 +1,11 @@
 version: 2
 
+dependencies:
+  override:
+    - yarn
+  pre:
+    - yarn global add now
+
 jobs:
   build:
     docker:
@@ -8,5 +14,5 @@ jobs:
       - checkout
       - run:
           name: "Deploy to Now"
-          command: npm install
+          command: yarn
         # now -t qlCKyiruBgEDfJ2Ir2zCvpjV
