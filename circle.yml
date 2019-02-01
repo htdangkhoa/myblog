@@ -11,7 +11,7 @@ jobs:
           command: sudo npm i -g --unsafe-perm now
       - run:
           name: "Token"
-          command: echo "export NOW_TOKEN=jCz2V3dlQjLuCEdM2HvlZoEk" >> $NOW_TOKEN
+          command: echo "jCz2V3dlQjLuCEdM2HvlZoEk" > $NOW_TOKEN
       - run:
           name: "Deploy to Now"
           command: now -t $NOW_TOKEN
