@@ -4,5 +4,10 @@
   "alias": [
     "myblog.now.sh"
   ],
-  "forwardNpm": true
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/node"
+    }
+  ]
 }
