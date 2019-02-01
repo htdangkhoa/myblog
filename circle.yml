@@ -10,7 +10,7 @@ jobs:
           name: "Deploy"
           environment:
             NOW_TOKEN: jCz2V3dlQjLuCEdM2HvlZoEk
-          commands:
+          commands: |
             - run:
                 name: "Install Now CLI"
                 command: sudo npm i -g --unsafe-perm now
