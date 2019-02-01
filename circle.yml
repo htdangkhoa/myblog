@@ -10,5 +10,8 @@ jobs:
           name: "Install Now CLI"
           command: sudo npm i -g --unsafe-perm now
       - run:
+          name: "Build"
+          command: npm run build
+      - run:
           name: "Login to Now"
           command: now -t qlCKyiruBgEDfJ2Ir2zCvpjV
