@@ -11,8 +11,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: "Install `Now`"
-        command: yarn global add now 
+          name: "Install `Now`"
+          command: yarn global add now 
       - run:
           name: "Deploy to Now"
           command: now -t qlCKyiruBgEDfJ2Ir2zCvpjV
