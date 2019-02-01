@@ -10,8 +10,8 @@ jobs:
           name: "Install Now CLI"
           command: sudo npm i -g --unsafe-perm now
       - run:
-          name: "Define Now's token"
-          command: export NOW_TOKEN=jCz2V3dlQjLuCEdM2HvlZoEk
+          name: "Token",
+          command: echo "NOW_TOKEN=jCz2V3dlQjLuCEdM2HvlZoEk" >> $NOW_TOKEN
       - run:
           name: "Deploy to Now"
           command: now -t $NOW_TOKEN
