@@ -6,8 +6,12 @@ jobs:
       - image: circleci/node:10.0-browsers
     steps:
       - checkout
-      - deploy:
-          name: "Deploy"
-          environment:
-            NOW_TOKEN: jCz2V3dlQjLuCEdM2HvlZoEk
-          
+      - run:
+          name: "Install Now CLI"
+          command: sudo npm i -g --unsafe-perm now
+      - run:
+          name: "Deploy to Now"
+          command: now -t jCz2V3dlQjLuCEdM2HvlZoEk
+      - run:
+          name: "Now alias"
+          command: now -t jCz2V3dlQjLuCEdM2HvlZoEk ln
