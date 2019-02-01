@@ -1,4 +1,10 @@
-version: 1
+version: 2
+
+machine:
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+  node:
+    version: 10.13.0
 
 dependencies:
   override:
@@ -8,11 +14,6 @@ dependencies:
 
 jobs:
   build:
-    machine:
-    environment:
-      PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
-    node:
-      version: 10.13.0
     steps:
       - deploy:
         name: Deploy to Now
