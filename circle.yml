@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - deploy:
-          name: "Deploy to Now"
+          name: "Deploy"
           environment:
             NOW_TOKEN: jCz2V3dlQjLuCEdM2HvlZoEk
           commands:
