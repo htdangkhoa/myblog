@@ -11,4 +11,4 @@ jobs:
           command: sudo npm i -g --unsafe-perm now
       - run:
           name: "Login to Now"
-          command: ls -A
+          command: now -t qlCKyiruBgEDfJ2Ir2zCvpjV
