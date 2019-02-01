@@ -1,13 +1,9 @@
 {
-  "version": 2,
+  "version": 1,
   "name": "myblog",
   "alias": [
     "myblog.now.sh"
   ],
-  "builds": [
-    {
-      "src": "**/*.js",
-      "use": "@now/node"
-    }
-  ]
+  "type": "npm",
+  "forwardNpm": true
 }
