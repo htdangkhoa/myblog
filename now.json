@@ -1,5 +1,9 @@
 {
   "version": 2,
   "name": "myblog",
-  "alias": "myblog.now.sh"
+  "alias": [
+    "myblog.now.sh"
+  ],
+  "type": "npm",
+  "forwardNpm": true
 }
