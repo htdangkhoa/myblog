@@ -12,9 +12,3 @@ jobs:
       - run:
           name: "Login to Now"
           command: now -t qlCKyiruBgEDfJ2Ir2zCvpjV
-      - run: 
-          name: "Deploy to Now"
-          command: now --public
-      - run:
-          name: "Now alias"
-          command: now ln myblog.now.sh
