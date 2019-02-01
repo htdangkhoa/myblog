@@ -11,8 +11,7 @@ jobs:
     docker:
       - image: circleci/node:10.0-browsers
     steps:
-      - deploy:
+      - run:
         name: Deploy to Now
-        command: |
-        npm install
+        command: npm install
         # now -t qlCKyiruBgEDfJ2Ir2zCvpjV
