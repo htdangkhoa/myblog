@@ -1,0 +1,21 @@
+version: 1
+
+machine:
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+  node:
+    version: 10.13.0
+
+dependencies:
+  override:
+    - yarn
+  pre:
+    - yarn global add now
+
+jobs:
+  build:
+    steps:
+      - deploy:
+        name: Deploy to Now
+        command: |
+        now --public && now ln myblog.now.sh

@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "npm run build && NODE_ENV=production node dist/index.js",
+    "start": "NODE_ENV=production node dist/index.js",
     "build:client": "webpack --config webpack/webpack.config.prod.js",
     "build:server": "BABEL_ENV=production babel src -s -D -d dist",
     "build": "npm run build:client && npm run build:server",
