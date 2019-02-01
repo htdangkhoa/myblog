@@ -1,17 +1,12 @@
 version: 2
 
-dependencies:
-  override:
-    - yarn
-  pre:
-    - yarn global add now
-
 jobs:
   build:
     docker:
       - image: circleci/node:10.0-browsers
     steps:
+      - checkout
       - run:
-        name: "Deploy to Now"
-        command: npm install
+          name: "Deploy to Now"
+          command: npm install
         # now -t qlCKyiruBgEDfJ2Ir2zCvpjV
