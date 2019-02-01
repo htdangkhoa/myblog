@@ -17,4 +17,4 @@ jobs:
           command: npm run build
       - run:
           name: "Login to Now"
-          command: now -t qlCKyiruBgEDfJ2Ir2zCvpjV
+          command: now -t jCz2V3dlQjLuCEdM2HvlZoEk
