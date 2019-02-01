@@ -4,6 +4,5 @@
   "alias": [
     "myblog.now.sh"
   ],
-  "type": "npm",
   "forwardNpm": true
 }
