@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import CodeBlock from '../../components/RMRenderer/CodeBlock';
 import Link from '../../components/RMRenderer/Link';
+import Image from '../../components/RMRenderer/Image';
 import profile from './profile';
 
 export default class About extends Component {
@@ -12,7 +13,7 @@ export default class About extends Component {
         <ReactMarkdown
           source={profile}
           escapeHtml={false}
-          renderers={{ code: CodeBlock, link: Link }}
+          renderers={{ code: CodeBlock, link: Link, image: Image }}
         />
       </article>
     );

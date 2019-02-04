@@ -1,0 +1,15 @@
+@import './variables';
+
+.RichTextEditor-root {
+  border: 1px solid $borderColor;
+  padding: $margin;
+
+  .RichTextEditor-buttons {
+    border-bottom: 1px solid $borderColor;
+    padding-bottom: $margin;
+  }
+
+  .public-DraftEditor-content {
+    min-height: 150px;
+  }
+}
