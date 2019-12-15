@@ -1,5 +1,7 @@
 # myblog
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/htdangkhoa/myblog.svg)](https://greenkeeper.io/)
+
 ## Requirement
 
 - [NodeJS v10](https://nodejs.org/)
